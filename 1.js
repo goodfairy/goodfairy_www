@@ -57,15 +57,15 @@ echo $total ;
  $total = 0;
  $step = 0 ;
 
- $total = $workDayAmount * ( intval($days/$period)-intval($days/(7*$period)) ) + $weekendAmount * intval($days/(7*$period)) ;
+//  $total = $workDayAmount * ( intval($days/$period)-intval($days/(7*$period)) ) + $weekendAmount * intval($days/(7*$period)) ;
 
- for ($i = $period; $i <= $days; $i=$i+$period) {	
- 	$step = $step + 1 ;	
- 	if (($step % 7) * $period == 6) or ($step * $period == 20) {
- 		$total = $total - $workDayAmount + weekendAmount ;
- 	}
- }
-echo $total ;
+//  for ($i = $period; $i <= $days; $i=$i+$period) {	
+//  	$step = $step + 1 ;	
+//  	if (($step % 7) * $period == 6) or ($step * $period == 20) {
+//  		$total = $total - $workDayAmount + weekendAmount ;
+//  	}
+//  }
+// echo $total ;
 
 
 
